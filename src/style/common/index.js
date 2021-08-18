@@ -22,13 +22,18 @@ export const Container = styled.section`
   }
 `;
 
-export const PaddingContainer = styled.div`
+export const PaddingContainer = styled.section`
   padding-top: 50px;
   padding-bottom: 20px;
 
   @media ${device.tablet} {
     padding-top: 70px;
     padding-bottom: 40px;
+  }
+
+  @media ${device.tablet} {
+    padding-top: 100px;
+    padding-bottom: 70px;
   }
 `;
 
@@ -56,49 +61,28 @@ export const MainButton = styled.button`
   }
 `;
 
-export const Title = styled.h1`
+export const Title = styled.h2`
   font-size: 32px;
-  font-weight: 700;
-  color: ${({ color }) => color};
-  margin-bottom: 20px;
-
-  @media ${device.tablet} {
+  text-align: ${(({aline})=>aline==='start'?'start':'center')};
+  font-weight: 600;
+  margin-bottom: 8px;
+  @media ${device.mobile} {
     font-size: 36px;
   }
-
-  @media ${device.laptop} {
+  @media ${device.tabletL} {
     font-size: 45px;
   }
 `;
 
-export const ColorLine = styled.div`
-text-align: center;
-  background-image: linear-gradient(90deg, #ef146e 0, #fea958 51%, #ef146e);
-  background-size: 200%;
-  position: relative;
-  height: auto;
-  width: 150px;
-  margin-bottom: 10px;
-  /* ::before {
-    content: "";
-    width: 95px;
-    left: 55px;
-    height: 6px;
-    position: absolute;
-    right: 40px;
-    left: 0;
-    top: 0;
-    border-radius: 15px;
-  } */
-  /* ::after {
-    content: "";
-    width: 95px;
-    left: 55px;
-    height: 6px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 15px;
-    transform: translateY(-50%);
-  } */
+export const CardContainer = styled.section`
+  @media ${device.tablet} {
+    display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  }
+  @media ${device.tabletL} {
+  grid-template-columns: repeat(3, 1fr);
+
+  }
 `;
+

@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import colors from "../../style/variables/colors";
-import { device } from "../../style/variables/deviceBreakpoints";
 
 export const Header = styled.header`
   background: ${({scrollY})=>scrollY>45 ? colors.white : 'transparent' } ;
@@ -13,13 +12,10 @@ export const Header = styled.header`
   position: static;
   top: 0;
   z-index: 10;
-  /* position: ${({scrollY})=>scrollY>45? 'fixed':''}; */
   position: sticky;
   top: 0;
   left: 0;
   right: 0;
-  @media ${device.laptop} {
-  }
 `;
 
 export const MenuContainer = styled.nav`

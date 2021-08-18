@@ -12,7 +12,7 @@ export const HeroContainer = styled.section`
     margin-bottom: 6rem;
   }
   @media ${device.laptop} {
-    margin-bottom: 6rem;
+    margin-bottom: 8rem;
   }
 `;
 

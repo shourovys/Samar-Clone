@@ -1,4 +1,6 @@
 import { BackGround } from "./App.styles";
+import Agency from "./components/Agency";
+import Fetuses from "./components/Fetuses";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Specialization from "./components/Specialization";
@@ -12,6 +14,8 @@ function App() {
         <Container>
           <HeroSection />
           <Specialization />
+          <Agency/>
+          <Fetuses/>
         </Container>
       </BackGround>
     </>
