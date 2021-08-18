@@ -4,7 +4,7 @@ import Fetuses from "./components/Fetuses";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import Specialization from "./components/Specialization";
-import { Container } from "./style/common";
+import { Container, PaddingContainer } from "./style/common";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
           <Specialization />
           <Agency/>
           <Fetuses/>
+          <PaddingContainer/>
         </Container>
       </BackGround>
     </>

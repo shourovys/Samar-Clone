@@ -63,7 +63,7 @@ export const MainButton = styled.button`
 
 export const Title = styled.h2`
   font-size: 32px;
-  text-align: ${(({aline})=>aline==='start'?'start':'center')};
+  text-align: ${({ aline }) => (aline === "start" ? "start" : "center")};
   font-weight: 600;
   margin-bottom: 8px;
   @media ${device.mobile} {
@@ -77,12 +77,10 @@ export const Title = styled.h2`
 export const CardContainer = styled.section`
   @media ${device.tablet} {
     display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
   }
   @media ${device.tabletL} {
-  grid-template-columns: repeat(3, 1fr);
-
+    grid-template-columns: repeat(3, 1fr);
   }
 `;
-
