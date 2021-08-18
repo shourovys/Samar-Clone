@@ -7,7 +7,7 @@ const Clients = () => {
     <PaddingContainer>
       <Title>What Our Clients Say’s</Title>
       <CssBar />
-      <MyCarousel/>
+      <MyCarousel />
     </PaddingContainer>
   );
 };

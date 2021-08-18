@@ -12,7 +12,7 @@ const SliderCards = () => {
       <SliderCard>
         <SliderCardImgWrapper>
           <img src={pic4} />
-          <i class="fas fa-quote-right"></i>
+          <i className="fas fa-quote-right"></i>
         </SliderCardImgWrapper>
 
         <div>
@@ -24,7 +24,7 @@ const SliderCards = () => {
             dolor. Morbi tempor gravida diam nec lacinia. Suspendisse vehicula
             ultricies arcu.
           </p>
-          <h2 class="left">
+          <h2>
             <span>Halana pip</span>
           </h2>
         </div>

@@ -37,8 +37,8 @@ export const BoxIconWrapper = styled.i`
 `;
 
 export const SocialIconContainer = styled.i`
-  display:flex;
-  justify-content:${({aline})=>aline?'start':'center'} ;
+  display: flex;
+  justify-content: ${({ aline }) => (aline ? "start" : "center")};
   gap: 6px;
 `;
 
@@ -47,14 +47,14 @@ export const SocialIconWrapper = styled.i`
   width: 40px;
   height: 40px;
   padding: 0;
-  border: .4px solid lightgray;
+  border: 0.4px solid lightgray;
   line-height: 38px;
   text-align: center;
   border-radius: 40px;
-  transition: all .5s;
+  transition: all 0.5s;
   cursor: pointer;
-  :hover{
-    color:${colors.grayDark};
-    border: .3px solid ${colors.primary};
+  :hover {
+    color: ${colors.grayDark};
+    border: 0.3px solid ${colors.primary};
   }
 `;

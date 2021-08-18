@@ -19,11 +19,11 @@ export const HeroContainer = styled.section`
 export const HeroInfo = styled.div`
   flex-basis: 65%;
   @media ${device.tablet} {
-  padding-top: 80px;
+    padding-top: 80px;
     margin-bottom: 70px;
   }
   @media ${device.tabletL} {
-  padding-top: 80px;
+    padding-top: 80px;
   }
 `;
 
@@ -39,6 +39,24 @@ export const HeroImg = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 2s linear forwards infinite;
+  animation: swinging 8s linear forwards infinite;
+  @keyframes swinging {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
 `;
 
 export const HeroTitle = styled.h1`
@@ -50,7 +68,6 @@ export const HeroTitle = styled.h1`
   @media ${device.laptop} {
     font-size: 52px;
   }
-  
 `;
 
 export const SubTitle = styled.h3`
@@ -64,5 +81,5 @@ export const HeroP = styled.h3`
   font-size: 15px;
   font-weight: 400;
   margin-bottom: 30px;
-  color:${colors.light}
+  color: ${colors.light};
 `;

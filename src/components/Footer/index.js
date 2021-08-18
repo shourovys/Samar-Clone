@@ -3,8 +3,8 @@ import logo from "../../images/logo-blue.png";
 import { Logo, PaddingContainer } from "../../style/common";
 import CssBar from "../Common/CssBar";
 import {
-    SocialIconContainer,
-    SocialIconWrapper
+  SocialIconContainer,
+  SocialIconWrapper
 } from "../Navbar/Hamburger/Drawer/Drawer.styles";
 import { FooterGrid } from "./Footer.styles";
 const Footer = () => {
@@ -17,7 +17,7 @@ const Footer = () => {
             Maecenas pellentesque placerat quam, in finibus nisl tincidunt sed.
             Aliquam magna augue, malesuada ut feugiat eget, cursus eget felis.
           </p>
-          <SocialIconContainer aline='start'>
+          <SocialIconContainer aline="start">
             <SocialIconWrapper>
               <i className="fab fa-facebook-f"></i>
             </SocialIconWrapper>
@@ -35,29 +35,53 @@ const Footer = () => {
 
         <section>
           <h4>Our links</h4>
-          <CssBar aline='start' bg='white'/>
-          <p>Our Service a</p>
-          <p>Our Service b</p>
-          <p>Our Service c</p>
-          <p>Our Service d</p>
+          <CssBar aline="start" bg="white" />
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service a
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service b
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service c
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service d
+          </p>
         </section>
 
         <section>
           <h4>Our Services</h4>
-          <CssBar aline='start' bg='white'/>
-          <p>Our Service a</p>
-          <p>Our Service b</p>
-          <p>Our Service c</p>
-          <p>Our Service d</p>
+          <CssBar aline="start" bg="white" />
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service a
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service b
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service c
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service d
+          </p>
         </section>
 
         <section>
           <h4>Other links</h4>
-          <CssBar aline='start' bg='white'/>
-          <p>Our Service a</p>
-          <p>Our Service b</p>
-          <p>Our Service c</p>
-          <p>Our Service d</p>
+          <CssBar aline="start" bg="white" />
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service a
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service b
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service c
+          </p>
+          <p>
+            <i className="fas fa-chevron-right"></i> &nbsp;Our Service d
+          </p>
         </section>
       </FooterGrid>
     </PaddingContainer>

@@ -9,17 +9,20 @@ export const FooterGrid = styled.footer`
   color: white;
   margin: 0 auto;
   max-width: 100%;
+
   @media ${device.tabletL} {
-    padding-left: 20px;
+    margin-left: 100px;
+  }
+  @media ${device.laptop} {
+    margin-left: 80px;
   }
 
-  & section{
+  & section {
     display: grid;
     gap: 5px;
 
-    & h4{
+    & h4 {
       font-size: 24px;
     }
   }
 `;
-

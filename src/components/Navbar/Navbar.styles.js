@@ -2,8 +2,8 @@ import styled from "styled-components";
 import colors from "../../style/variables/colors";
 
 export const Header = styled.header`
-  background: ${({scrollY})=>scrollY>45 ? colors.white : 'transparent' } ;
-  color: ${({scrollY})=>scrollY>45? colors.dark : colors.white} ;
+  background: ${({ scrollY }) => (scrollY > 45 ? colors.white : "transparent")};
+  color: ${({ scrollY }) => (scrollY > 45 ? colors.dark : colors.white)};
   height: 85px;
   display: flex;
   justify-content: center;

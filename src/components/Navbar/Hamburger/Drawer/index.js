@@ -32,7 +32,6 @@ const LeftDrawer = ({ toggleDrawer }) => {
       onKeyDown={toggleDrawer(false)}
     >
       <HamburgerMenuContainer>
-
         <Logo color="blue" src={logo} alt="logo" />
 
         <HamburgerItemContainer>
@@ -72,7 +71,6 @@ const LeftDrawer = ({ toggleDrawer }) => {
             <i className="fab fa-instagram"></i>
           </SocialIconWrapper>
         </SocialIconContainer>
-
       </HamburgerMenuContainer>
     </div>
   );

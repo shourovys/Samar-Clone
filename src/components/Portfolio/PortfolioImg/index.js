@@ -5,7 +5,10 @@ import pic3 from "../../../images/protfiloimgs/pic3.jpg";
 import pic4 from "../../../images/protfiloimgs/pic4.jpg";
 import pic5 from "../../../images/protfiloimgs/pic5.jpg";
 import pic6 from "../../../images/protfiloimgs/pic6.jpg";
-import { PortfolioImgContainer, PortfolioImgWrapper } from "./PortfolioImg.styles";
+import {
+  PortfolioImgContainer,
+  PortfolioImgWrapper
+} from "./PortfolioImg.styles";
 const PortfolioImg = ({ currentOption }) => {
   const options = [
     { name: ["Web Design", "Web Development"], img: pic1 },

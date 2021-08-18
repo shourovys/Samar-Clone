@@ -17,9 +17,6 @@ export const FetusesCards = styled.section`
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  @media ${device.tablet} {
-
-  }
 `;
 
 export const FetusesCard = styled.section`
@@ -38,6 +35,10 @@ export const FetusesCard = styled.section`
     display: flex;
     justify-content: center;
     align-items: center;
+    @media screen and (min-width: 430px) {
+      width: 150px;
+      max-width: 100%;
+    }
     @media ${device.mobile} {
       width: 200px;
       max-width: 100%;
@@ -63,5 +64,23 @@ export const FetusesImgWrapper = styled.section`
   & img{
     width: 100%;
     height: 100%;
+    -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-animation: swinging 2s linear forwards infinite;
+  animation: swinging 8s linear forwards infinite;
+  @keyframes swinging {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(2deg);
+    }
+    75% {
+      transform: rotate(-2deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
   }
 `;

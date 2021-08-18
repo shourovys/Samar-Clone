@@ -11,7 +11,7 @@ import {
 const Fetuses = () => {
   return (
     <PaddingContainer>
-      <Title>Why Our Agency</Title>
+      <Title>Our Fetures</Title>
       <CssBar />
       <FetusesCardsContainer>
         <FetusesCards>

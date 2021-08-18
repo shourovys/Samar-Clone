@@ -3,10 +3,10 @@ import table from "../../images/table.png";
 import { PaddingContainer, Title } from "../../style/common";
 import CssBar from "../Common/CssBar/index";
 import {
-    AgencyContainer,
-    AgencyCountBox,
-    AgencyCountContainer,
-    AgencyImgWrapper
+  AgencyContainer,
+  AgencyCountBox,
+  AgencyCountContainer,
+  AgencyImgWrapper
 } from "./Agency.styles";
 
 const Agency = () => {

@@ -1,4 +1,4 @@
-import { BackGround } from "./App.styles";
+import { BackGround, FooterBackGround } from "./App.styles";
 import Agency from "./components/Agency";
 import Clients from "./components/Clients";
 import Fetuses from "./components/Fetuses";
@@ -27,11 +27,11 @@ function App() {
           <Clients />
         </Container>
       </BackGround>
-      <BackGround>
+      <FooterBackGround>
         <Container>
-          <Footer/>
+          <Footer />
         </Container>
-      </BackGround>
+      </FooterBackGround>
     </>
   );
 }

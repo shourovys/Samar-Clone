@@ -16,10 +16,9 @@ const MyCarousel = () => (
     ]}
     animationSpeed={2000}
   >
-      <SliderCards />
-      <SliderCards />
-      <SliderCards />
-
+    <SliderCards />
+    <SliderCards />
+    <SliderCards />
   </Carousel>
 );
 

@@ -1,7 +1,7 @@
 import React from "react";
 import { Option, OptionWrapper } from "./PortfolioHeader.styles";
 
-const PortfolioHeader = ({currentOption, setCurrentOption }) => {
+const PortfolioHeader = ({ currentOption, setCurrentOption }) => {
   const options = [
     { name: "All" },
     { name: "Web Design" },
@@ -13,9 +13,13 @@ const PortfolioHeader = ({currentOption, setCurrentOption }) => {
   return (
     <OptionWrapper>
       {options.map((option) => (
-        <Option key={option.name} onClick={(()=>setCurrentOption(option))}
-          selected={currentOption.name===option.name}
-        >{option.name}</Option>
+        <Option
+          key={option.name}
+          onClick={() => setCurrentOption(option)}
+          selected={currentOption.name === option.name}
+        >
+          {option.name}
+        </Option>
       ))}
     </OptionWrapper>
   );

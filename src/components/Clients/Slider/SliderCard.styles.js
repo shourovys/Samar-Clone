@@ -55,13 +55,12 @@ export const SliderCard = styled.div`
 `;
 
 export const SliderCardImgWrapper = styled.div`
-position: relative;
+  position: relative;
 
-& i {
-  font-size: 4rem;
-  position: absolute;
-  bottom: 20px;
-  right: 10px;
-}
-
+  & i {
+    font-size: 4rem;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+  }
 `;
