@@ -5,6 +5,7 @@ export const Container = styled.section`
   max-width: 100vw;
   padding: 0 15px;
   margin: 0 auto;
+  background-color: ${({backgroundColor})=>backgroundColor};
 
   @media ${device.mobile} {
     max-width: 540px;
