@@ -5,7 +5,7 @@ export const Container = styled.section`
   max-width: 100vw;
   padding: 0 15px;
   margin: 0 auto;
-  background-color: ${({backgroundColor})=>backgroundColor};
+  background-color: ${({ backgroundColor }) => backgroundColor};
 
   @media ${device.mobile} {
     max-width: 540px;
@@ -32,7 +32,7 @@ export const PaddingContainer = styled.section`
     padding-bottom: 40px;
   }
 
-  @media ${device.tablet} {
+  @media ${device.tabletL} {
     padding-top: 100px;
     padding-bottom: 70px;
   }
@@ -67,6 +67,8 @@ export const Title = styled.h2`
   text-align: ${({ aline }) => (aline === "start" ? "start" : "center")};
   font-weight: 600;
   margin-bottom: 8px;
+  color: #1f2471;
+
   @media ${device.mobile} {
     font-size: 36px;
   }

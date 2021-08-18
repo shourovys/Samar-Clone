@@ -38,8 +38,8 @@ export const BoxIconWrapper = styled.i`
 
 export const SocialIconContainer = styled.i`
   display:flex;
-  justify-content:center;
-  gap: 2px;
+  justify-content:${({aline})=>aline?'start':'center'} ;
+  gap: 6px;
 `;
 
 export const SocialIconWrapper = styled.i`
@@ -52,6 +52,7 @@ export const SocialIconWrapper = styled.i`
   text-align: center;
   border-radius: 40px;
   transition: all .5s;
+  cursor: pointer;
   :hover{
     color:${colors.grayDark};
     border: .3px solid ${colors.primary};
